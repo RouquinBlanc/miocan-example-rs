@@ -1,0 +1,11 @@
+[package]
+name = "miocan_example"
+version = "0.1.0"
+authors = ["Jonathan Martin <therouquinblanc@gmail.com>"]
+license = "MIT"
+repository = "https://github.com/RouquinBlanc/miocan-example-rs"
+
+[dependencies]
+mio = "0.6.9"
+miocan = { git = "https://github.com/RouquinBlanc/miocan-rs" }
+socketcan = { git = "https://github.com/RouquinBlanc/socketcan-rs", branch="release/1.6"}
