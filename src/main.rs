@@ -9,7 +9,7 @@ use socketcan::CANSocket;
 
 fn main() {
     let socket = CANSocket::open("vcan0").expect("creating CAN socket");
-    socket.set_nonblocking().expect("set socket non-blocking");
+    socket.set_nonblocking(true).expect("set socket non-blocking");
     let mio_socket = MIOCANSocket::from(socket);
 
     let poll = Poll::new().expect("creating poll");
